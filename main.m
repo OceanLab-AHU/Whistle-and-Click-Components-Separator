@@ -2,10 +2,6 @@ clear;
 close all;
 clc;
 
-% time_scales = 0.2:0.2:2.3;
-% angles = (pi/8:pi/8:pi) + pi/8;
-time_scales = 0.6:0.4:2.3;
-angles = (3*pi/8:pi/2:pi) + pi/8;
 fs = 48000;
 N = 48000;
 t= 0:1/fs:1;
@@ -31,7 +27,7 @@ Sig = awgn(Sig, -1, 'measured') ;%add -1dB noise
 % signal2 = signal(1:50001,1);
 % Sig = signal1 + signal2;
 
-[~, f, t, ReRidges, SpecSet] = OWCS(Sig, fs, time_scales, angles);
+[~, f, t, ReRidges, SpecSet] = OWCS(Sig, fs);
 
 disp_band = [min(t) max(t) 0 fs/2];
 
