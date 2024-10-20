@@ -1,2 +1,4 @@
 # Whistle-and-Click-Components-Separator
-This project provides a MATLAB-implemented tool designed to separate whistle and click components for whale signals. Superior results are also achieved by simulating cross whistle and click components.
+Matlab code to reproduce results of the paper entitled "Overlapping Whistle-and-Click Separation for Whale Signals." Run `main.m` to obtain the separation results of simulated signals and real whale signals as presented in the paper. 
+
+This program supports MATLAB R2022b and later versions. MATLAB R2022b has not been tested, so compatibility is not guaranteed.
